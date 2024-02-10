@@ -41,7 +41,7 @@ function App() {
       <div>
         {showError && (
         <div>
-          <h1>AAG A TEPE - INCREMENT/DECREMENT 10 and 0 CHYA MADHYE THEV</h1>
+          <h1>INCREMENT/DECREMENT SHOULD BE BETWEEN 10 AND 0</h1>
           <img src={image} alt='Samj nhi ata' height={400} width={400}/>
         </div>
         

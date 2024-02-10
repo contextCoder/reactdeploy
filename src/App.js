@@ -42,7 +42,7 @@ function App() {
         {showError && (
         <div>
           <h1>AAG A TEPE - INCREMENT/DECREMENT 10 and 0 CHYA MADHYE THEV</h1>
-          <img src={image} alt='Samj nhi ata Image' height={400} width={400}/>
+          <img src={image} alt='Samj nhi ata' height={400} width={400}/>
         </div>
         
         )}

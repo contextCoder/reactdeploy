@@ -8,13 +8,13 @@ function App() {
     console.log("======val-------",val);
     if (val) {
       if (counter >= 10) {
-        alert("counter should be below '10'")
+        alert("counter should be below of '10'")
       } else {
         setCounter(counter + 1)
       }
     } else {
       if (counter <= 0) {
-        alert("counter should be above '0'")
+        alert("counter should be above of '0'")
       } else {
         setCounter(counter - 1 )
       }

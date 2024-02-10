@@ -1,19 +1,27 @@
 import './App.css';
 import { useState } from 'react';
-
+import image from './samj_nhi_ata.jpg'
 function App() {
   const [counter, setCounter] = useState(0);
+  const [showError, setshowError] = useState(false);
 
   const counterStatus = ( val) => () => {
     if (val) {
       if (counter >= 10) {
-        alert("AAG a TEPE - counter should be below of '10'")
+        setshowError(true)
+
+        setTimeout(() => {
+          setshowError(false)
+        }, 3000);
       } else {
         setCounter(counter + 1)
       }
     } else {
       if (counter <= 0) {
-        alert("AAG a TEPE - counter should be above of '0'")
+        setshowError(true)
+        setTimeout(() => {
+          setshowError(false)
+        }, 5000);
       } else {
         setCounter(counter - 1 )
       }
@@ -30,6 +38,15 @@ function App() {
       <button onClick={counterStatus(true)}>Increment</button>
       <button onClick={counterStatus(false)}>Decrement</button>
       <button onClick={() => resetCounter()}>Reset</button>
+      <div>
+        {showError && (
+        <div>
+          <h1>AAG A TEPE - INCREMENT/DECREMENT 10 and 0 CHYA MADHYE THEV</h1>
+          <img src={image} alt='Samj nhi ata Image' height={400} width={400}/>
+        </div>
+        
+        )}
+      </div>
     </div>
   );
 }

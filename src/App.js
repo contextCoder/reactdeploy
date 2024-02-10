@@ -5,16 +5,15 @@ function App() {
   const [counter, setCounter] = useState(0);
 
   const counterStatus = ( val) => () => {
-    console.log("======val-------",val);
     if (val) {
       if (counter >= 10) {
-        alert("counter should be below of '10'")
+        alert("AAG a TEPE - counter should be below of '10'")
       } else {
         setCounter(counter + 1)
       }
     } else {
       if (counter <= 0) {
-        alert("counter should be above of '0'")
+        alert("AAG a TEPE - counter should be above of '0'")
       } else {
         setCounter(counter - 1 )
       }
